@@ -17,7 +17,7 @@ export default function Stat({ label, value, sub, accent }: Props) {
       </p>
       <p
         className={`font-mono2 mt-2 text-xl font-semibold leading-none sm:text-2xl lg:text-[28px] ${
-          accent ? 'text-[var(--accent)]' : 'text-[var(--ink)]'
+          accent ? 'text-[var(--paper)]' : 'text-[var(--ink)]'
         }`}
       >
         {value}
