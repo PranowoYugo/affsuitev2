@@ -21,14 +21,14 @@ export default function AppShell() {
             </span>
           </NavLink>
 
-          <nav className="flex w-full items-center justify-center gap-1 overflow-x-auto sm:absolute sm:left-1/2 sm:top-1/2 sm:w-auto sm:-translate-x-1/2 sm:-translate-y-1/2">
+          <nav className="flex w-full flex-wrap items-center justify-center gap-1 sm:absolute sm:left-1/2 sm:top-1/2 sm:w-auto sm:-translate-x-1/2 sm:-translate-y-1/2">
             {NAV.map((n) => (
               <NavLink
                 key={n.to}
                 to={n.to}
                 end={n.to === '/'}
                 className={({ isActive }) =>
-                  `whitespace-nowrap rounded-full px-4 py-2 text-sm font-medium transition-colors ${
+                  `whitespace-nowrap rounded-full px-3 py-1.5 text-xs font-medium transition-colors sm:px-4 sm:py-2 sm:text-sm ${
                     isActive
                       ? 'bg-[var(--ink)] text-[var(--paper)]'
                       : 'text-[var(--ink-soft)] hover:bg-[var(--paper-2)] hover:text-[var(--ink)]'
